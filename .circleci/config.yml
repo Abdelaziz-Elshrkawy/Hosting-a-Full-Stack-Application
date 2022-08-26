@@ -64,7 +64,4 @@ jobs:
 workflows:
   udagram:
     jobs:
-      build
-      deploy
-        requires:
-          - build
+      - deploy
