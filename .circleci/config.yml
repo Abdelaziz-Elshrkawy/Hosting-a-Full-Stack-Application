@@ -68,9 +68,11 @@ jobs:
             
 workflows:
   version: 2
-  elastic-beanstalk-workflow:
+  build:
     jobs:
-      - node/test
+      - build
+elastic-beanstalk-workflow:
+    jobs:
       - eb/deploy:
           context: aws
           environment-name: udagram-api-dev
@@ -78,12 +80,6 @@ workflows:
             branches:
               only:
                 - main
-          label: version-<<pipeline.number>>
-          requires:
-            - node/test
-  build-deploy:
-    jobs:
-      - build
       - deploy:
           requires:
             - build
