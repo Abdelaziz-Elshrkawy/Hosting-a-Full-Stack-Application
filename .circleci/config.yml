@@ -13,8 +13,9 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '16.0.0'         
+          node-version: '16.0.0'
       - checkout
+      -aws-cli/setup
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
@@ -33,7 +34,7 @@ jobs:
       - run:
           name: Front-End Lint
           command: |
-            npm ru frontend:lint
+            npm run frontend:lint
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
@@ -43,7 +44,7 @@ jobs:
       - run:
           name: API Build
           command: |
-            api:build
+            npm run api:build
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -59,7 +60,7 @@ jobs:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
-            "npm run deploy"
+            npm run deploy
             
 workflows:
   udagram:
