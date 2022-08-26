@@ -71,10 +71,9 @@ workflows:
   build:
     jobs:
       - build
-elastic-beanstalk-workflow:
     jobs:
       - eb/deploy:
-          context: aws
+          context: eb-cli
           environment-name: udagram-api-dev
           filters:
             branches:
