@@ -60,11 +60,5 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             npm run deploy
-            
-workflows:
-  udagram:
-    jobs:
-      Sequence:
-      - build
-      - deploy
+          
         
