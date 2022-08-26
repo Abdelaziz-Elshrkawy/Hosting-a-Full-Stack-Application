@@ -64,7 +64,7 @@ jobs:
 workflows:
   udagram:
     jobs:
-      steps:
+      Sequence:
       - build
       - deploy
         
