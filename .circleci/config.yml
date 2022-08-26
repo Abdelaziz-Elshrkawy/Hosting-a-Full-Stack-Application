@@ -71,13 +71,6 @@ workflows:
   build:
     jobs:
       - build
-      - eb/deploy:
-          context: eb-cli
-          environment-name: udagram-api-dev
-          filters:
-            branches:
-              only:
-                - main
       - deploy:
           requires:
             - build
