@@ -62,17 +62,8 @@ jobs:
             npm run deploy
             
 workflows:
-  udagram:
+  version: 2
+  build_and_deploy:
     jobs:
-      - build:
-       hold:
-          filters:
-            branches:
-              only:
-                - master
-          type: approval
-          requires:
-            - build
-      - deploy:
-          requires:
-            - deploy
+      - build
+      - deploy
