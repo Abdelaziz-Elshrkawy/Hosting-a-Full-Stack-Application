@@ -13,6 +13,7 @@ ______________________________________________________________
 ###    - Nodejs v16.0.0 While older versions can work it is advisable to keep node to latest LTS version
 ###    - npm V8.11.0 or more recent, Yarn can work but was not tested for this project
 ###    - Express V4.16.4 nodejs web framework
+###    - Angularjs front end javascript workframe 
 ###    - Postgresql database V14.4 
 
 
