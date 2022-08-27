@@ -1,7 +1,7 @@
 # Udagram Project Documentation 
 
 ## Infrastructure (SErvices used to start CI/CD Pipline)
-![website]('./../website-diagram.png')
+![website](website-diagram.png)
 ###    - AWS RDS (Relational Database Service) Using PSQL (POSTGRESQL)=> The RDS is just a database used by website to store and retrieve data
 ###    - AWS S3 (Simple Storage Service) => used to store the Client side files and initialize endpoint for it.
 ###    - AWS EB (Elastic Beanstalk)=> Is Easy to use service uses AWS S3 service to store the data and mainly used for archiving versions of the website server and deploying server with endpoint 
