@@ -16,7 +16,8 @@ ______________________________________________________________
 
 
 ______________________________________________________________
-['./pipline-diagram.png']
+
+![Pipline](pipline-diagram.png)
 ## Pipeline (The sequence of build and deploy of project)
 ###    - First the developers start to build the project blocks and then start to test it locally
 ###    - after local approval the developers start to write the pipeline and create [Github](https://github.com/) repository and configure it with [CircleCi](https://app.circleci.com/) to track the changes and automate the CI/CD process
