@@ -1,6 +1,7 @@
 # Udagram Project Documentation 
 
 ## Infrastructure (SErvices used to start CI/CD Pipline)
+![website]('./../website-diagram.png')
 ###    - AWS RDS (Relational Database Service) Using PSQL (POSTGRESQL)=> The RDS is just a database used by website to store and retrieve data
 ###    - AWS S3 (Simple Storage Service) => used to store the Client side files and initialize endpoint for it.
 ###    - AWS EB (Elastic Beanstalk)=> Is Easy to use service uses AWS S3 service to store the data and mainly used for archiving versions of the website server and deploying server with endpoint 
@@ -17,8 +18,8 @@ ______________________________________________________________
 
 ______________________________________________________________
 
-![Pipline](pipline-diagram.png)
 ## Pipeline (The sequence of build and deploy of project)
+![Pipline](pipline-diagram.png)
 ###    - First the developers start to build the project blocks and then start to test it locally
 ###    - after local approval the developers start to write the pipeline and create [Github](https://github.com/) repository and configure it with [CircleCi](https://app.circleci.com/) to track the changes and automate the CI/CD process
 ###    - while project continuos development when pushing the new changes to [Github](https://github.com/) repository the [CircleCi](https://app.circleci.com/) starts the pipeline process by following the [config.yml](../.circleci/config.yml) jobs and it uses the environment variables by inserting it on [CircleCi Environment Variables Section](../Screenshots/env-var.png)
