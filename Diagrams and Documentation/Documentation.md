@@ -21,7 +21,7 @@ ______________________________________________________________
 ## Pipeline (The sequence of build and deploy of project)
 ###    - First the developers start to build the project blocks and then start to test it locally
 ###    - after local approval the developers start to write the pipeline and create [Github](https://github.com/) repository and configure it with [CircleCi](https://app.circleci.com/) to track the changes and automate the CI/CD process
-###    - while project continuos development when pushing the new changes to [Github](https://github.com/) repository the [CircleCi](https://app.circleci.com/) starts the pipeline process by following the [config.yml](../.circleci/config.yml) jobs 
+###    - while project continuos development when pushing the new changes to [Github](https://github.com/) repository the [CircleCi](https://app.circleci.com/) starts the pipeline process by following the [config.yml](../.circleci/config.yml) jobs and it uses the environment variables by inserting it on [CircleCi Environment Variables Section](../Screenshots/env-var.png)
 ###    - after the pipeline finishes successfully of building the client-side and server-side it starts the deployment process starting by client side if the client side deployed successfully then it will start deploying the server-side if it completed successfully the pipeline is completed and every thing to this point is good 
 ###    - after deploying it is important to check the website functionality by visiting the website url and trying website features.
 
