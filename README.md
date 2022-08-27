@@ -24,7 +24,7 @@ This application is provided to you as an alternative starter project if you do 
 ### [forntend link (website link)](http://udagram-bucket-07.s3-website-us-east-1.amazonaws.com)
 
 ### [backend link (server link)](http://udagram-api-dev2222222.us-east-1.elasticbeanstalk.com)
-### [database link (RDS service link)](postgresql://postgres:postgres@database.czq5bd7etjyf.us-east-1.rds.amazonaws.com/postgres)
+### database link (RDS service link):(postgresql://postgres:postgres@database.czq5bd7etjyf.us-east-1.rds.amazonaws.com/postgres)
 
 ### Installation
 
