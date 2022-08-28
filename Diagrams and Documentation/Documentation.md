@@ -28,9 +28,8 @@ ______________________________________________________________
 ###    - after deploying it is important to check the website functionality by visiting the website url and trying website features.
 
 ______________________________________________________________
-
+## NOTE THE LINK WILL NOT WORK BECAUSE THE AWS SERVICE AWS TEMPORARY FOR THE PROJECT AND THE AWS ACCOUNT WAS SUSPENDED AFTER COMPLETION 
 ## Project Links
-
 ### [forntend link (website link)](http://udagram-bucket-07.s3-website-us-east-1.amazonaws.com)
 
 ### [backend link (server link)](http://udagram-api-dev2222222.us-east-1.elasticbeanstalk.com)
