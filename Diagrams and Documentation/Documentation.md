@@ -26,11 +26,3 @@ ______________________________________________________________
 ###    - while project continuos development when pushing the new changes to [Github](https://github.com/) repository the [CircleCi](https://app.circleci.com/) starts the pipeline process by following the [config.yml](../.circleci/config.yml) jobs and it uses the environment variables by inserting it on [CircleCi Environment Variables Section](../Screenshots/env-var.png)
 ###    - after the pipeline finishes successfully of building the client-side and server-side it starts the deployment process starting by client side if the client side deployed successfully then it will start deploying the server-side if it completed successfully the pipeline is completed and every thing to this point is good 
 ###    - after deploying it is important to check the website functionality by visiting the website url and trying website features.
-
-______________________________________________________________
-## NOTE THE LINK WILL NOT WORK BECAUSE THE AWS SERVICE WAS TEMPORARY FOR THE PROJECT 
-## Project Links
-### [forntend link (website link)](http://udagram-bucket-07.s3-website-us-east-1.amazonaws.com)
-
-### [backend link (server link)](http://udagram-api-dev2222222.us-east-1.elasticbeanstalk.com)
-### database link (RDS service link):(`postgresql://postgres:postgres@database.czq5bd7etjyf.us-east-1.rds.amazonaws.com:5432/postgres`)
